@@ -9,7 +9,7 @@ int main()
  	{
  		printf("*");
 	 }
-	for(int s=0;s<=2*n-2*i-2;s++)
+	for(int s=0;s<=2*n-2*i-2+1;s++)
 	{
 		printf(" ");
 	 } 
@@ -26,7 +26,7 @@ int main()
  	{
  		printf("*");
 	 }
-	for(int s=0;s<=2*n-2*i-2;s++)
+	for(int s=0;s<=2*n-2*i-2+1;s++)
 	{
 		printf(" ");
 	 } 
