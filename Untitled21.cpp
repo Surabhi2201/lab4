@@ -1,41 +1,31 @@
 #include<stdio.h>
 int main()
 {
- int n;
- scanf("%d",&n);
- for(int i=0;i<n;i++)
- {
- 	for(int j=0;j<i;j++)
- 	{
- 		printf("*");
-	 }
-	for(int s=0;s<=2*n-2*i-2;s++)
+	int n;
+	scanf("%d",&n);
+	for(int i=0;i<n;i++)
 	{
-		printf(" ");
-	 } 
-	 for(int j=0;j<i;j++)
- 	{
- 		printf("*");
-	 }
-	 printf("\n");
-	 
- }
- for(int i=n;i>n;i--)
- {
- 	for(int j=0;j<i;j++)
- 	{
- 		printf("*");
-	 }
-	for(int s=0;s<=2*i;s++)
+		for(int s=0;s<n-i-1;s++)
+		{
+			printf(" ");
+		}
+		for(int j=0;j<(2*i+1);j++)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
+	for(int i=n-1;i>0;i--)
 	{
-		printf(" ");
-	 } 
-	 for(int j=0;j<i;j++)
- 	{
- 		printf("*");
-	 }
-	 printf("\n");
-	 
- }
- return(0);
+		for(int s=0;s<n-i;s++)
+		{
+			printf(" ");
+		}
+		for(int j=0;j<(2*i-1);j++)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
+	return(0);
 }
